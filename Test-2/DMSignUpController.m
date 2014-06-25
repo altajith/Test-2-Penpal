@@ -158,7 +158,7 @@
     return TRUE;
 }
 
--(BOOL) NSStringIsValidEmail:(NSString *)checkString
+- (BOOL) NSStringIsValidEmail:(NSString *)checkString
 {
     BOOL stricterFilter = YES;
     NSString *stricterFilterString = @"[A-Z0-9a-z\\._%+-]+@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}";
@@ -167,4 +167,30 @@
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
     return [emailTest evaluateWithObject:checkString];
 }
+
+- (BOOL) NSStringIsContainsNumber:(NSString *)checkString
+{
+    NSString *stricterFilterString = @"^(?:|0|[1-9]\\d*)(?:\\.\\d*)?$";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", stricterFilterString];
+    return [emailTest evaluateWithObject:checkString];
+}
+
+- (IBAction)ChangePasswordStrength:(id)sender {
+    if(PasswordText.text.length < 4){
+        PasswordStrengthBar.tintColor=[UIColor redColor];
+        [PasswordStrengthBar setProgress:0.25];
+        //ErrorMsg.text=@"Too Week";
+        
+    }else if(PasswordText.text.length < 8){
+        PasswordStrengthBar.tintColor=[UIColor yellowColor];
+        [PasswordStrengthBar setProgress:0.5];
+        //ErrorMsg.text=@"Good";
+        
+    }else if(PasswordText.text.length > 8){
+        PasswordStrengthBar.tintColor=[UIColor greenColor];
+        [PasswordStrengthBar setProgress:1.0];
+        //ErrorMsg.text=@"Perfect";
+    }
+}
+
 @end

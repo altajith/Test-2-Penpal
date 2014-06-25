@@ -44,9 +44,12 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="ChangePasswordStrength:" destination="IRa-R6-kmf" eventType="editingChanged" id="9Zv-pF-8Yp"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="td5-fh-Jpj">
-                                        <rect key="frame" x="20" y="185" width="280" height="30"/>
+                                        <rect key="frame" x="20" y="190" width="280" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -59,7 +62,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uS0-j6-stF">
-                                        <rect key="frame" x="225" y="223" width="75" height="30"/>
+                                        <rect key="frame" x="225" y="228" width="75" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                                         <inset key="contentEdgeInsets" minX="4" minY="1" maxX="3" maxY="0.0"/>
@@ -71,7 +74,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLM-Wp-UVa">
-                                        <rect key="frame" x="20" y="223" width="75" height="30"/>
+                                        <rect key="frame" x="20" y="228" width="75" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                                         <inset key="contentEdgeInsets" minX="4" minY="1" maxX="3" maxY="0.0"/>
@@ -79,6 +82,12 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <progressView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygT-iv-3oP">
+                                        <rect key="frame" x="31" y="180" width="259" height="2"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.99390037949999999" blue="0.3274392397" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </progressView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.075596098710000004" green="0.22266946200000001" blue="0.61383322009999997" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -90,6 +99,7 @@
                         <outlet property="ConfrimPassword" destination="td5-fh-Jpj" id="3Q9-kL-vSc"/>
                         <outlet property="EmailText" destination="lwI-pI-rwc" id="c0B-DT-oz6"/>
                         <outlet property="ErrorMsg" destination="WAu-vZ-gUl" id="kjV-Lx-Yw8"/>
+                        <outlet property="PasswordStrengthBar" destination="ygT-iv-3oP" id="HSN-oi-ssb"/>
                         <outlet property="PasswordText" destination="Nzh-AH-uCS" id="qCv-Fo-Fub"/>
                         <outlet property="SignUpButton" destination="uS0-j6-stF" id="LhU-xj-gfT"/>
                         <outlet property="UsernameText" destination="spJ-m9-MEB" id="3Oo-nW-8Tc"/>

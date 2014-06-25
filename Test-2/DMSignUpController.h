@@ -17,8 +17,10 @@
     IBOutlet UITextField *ConfrimPassword;
     IBOutlet UILabel *ErrorMsg;
     IBOutlet UIButton *BackButton;
+    IBOutlet UIProgressView *PasswordStrengthBar;
     
 }
 - (IBAction)SignUpFunction:(id)sender;
+- (IBAction)ChangePasswordStrength:(id)sender;
 
 @end

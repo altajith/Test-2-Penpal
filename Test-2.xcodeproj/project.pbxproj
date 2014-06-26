@@ -36,6 +36,7 @@
 		3E2306FF195ABCF500576FB7 /* DMSignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2306FE195ABCF500576FB7 /* DMSignUpController.m */; };
 		3E2C4B00195BCBC000C6B369 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C4AFF195BCBC000C6B369 /* LoginController.m */; };
 		3E2C4B03195BD81700C6B369 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C4B02195BD81700C6B369 /* NavigationController.m */; };
+		3EB6C4A7195C1B170005CBBC /* html.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3EB6C4A6195C1B170005CBBC /* html.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		3E2C4AFF195BCBC000C6B369 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		3E2C4B01195BD81700C6B369 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		3E2C4B02195BD81700C6B369 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		3EB6C4A6195C1B170005CBBC /* html.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = html.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 		3E13064D19596390001C3324 /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				3EB6C4A6195C1B170005CBBC /* html.jpg */,
 			);
 			name = imgs;
 			path = ../../../imgs;
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E130627195926EF001C3324 /* Images.xcassets in Resources */,
+				3EB6C4A7195C1B170005CBBC /* html.jpg in Resources */,
 				3E130619195926EF001C3324 /* InfoPlist.strings in Resources */,
 				3E130622195926EF001C3324 /* Main.storyboard in Resources */,
 				3E13064419592E2E001C3324 /* IronManWallpaper.jpg in Resources */,

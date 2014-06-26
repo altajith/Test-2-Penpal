@@ -18,10 +18,18 @@
     IBOutlet UIButton *DeactivateButton;
     IBOutlet UIView *DetialsContainer;
     IBOutlet UIButton *Next1;
+    IBOutlet UILabel *UsernameDisplay;
+    IBOutlet UITextField *NameText;
+    IBOutlet UITextField *MobileText;
+    IBOutlet UITextField *Address1Text;
+    IBOutlet UITextField *Address2Text;
+    IBOutlet UISegmentedControl *GenderSelector;
+    IBOutlet UIButton *CompleteButton;
 }
 
 - (IBAction)LogoutFunction:(id)sender;
 - (IBAction)ChangeProfilePicFunction:(id)sender;
 - (IBAction)MoveNext1:(id)sender;
+- (IBAction)CompleteAccountUpdate:(id)sender;
 
 @end

@@ -41,7 +41,10 @@
         // other fields can be set just like with PFObject
         user[@"fullname"] = @"";
         user[@"mobile"] = @"";
-    
+        user[@"address1"] = @"";
+        user[@"address2"] = @"";
+        user[@"gender"] = @"";
+        
         [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
                 ErrorMsg.textColor=[UIColor whiteColor];

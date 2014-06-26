@@ -23,11 +23,12 @@
     IBOutlet UIImageView *TopIcon;
     IBOutlet UIImageView *BottonIcon;
     IBOutlet UIImageView *UserButton;
-    
+    IBOutlet UIButton *SearchButton;
     IBOutlet UITextField *SearchText;
+    IBOutlet UILabel *TitleText;
     
 }
 @property NSString *value1;
-- (IBAction)MoveFromSeach:(id)sender;
+- (IBAction)EndSearch:(id)sender;
 - (IBAction)TouchToSearch:(id)sender;
 @end

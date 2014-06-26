@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Test-2/DMViewController.h"
-            timestampString = "425374018.766569"
+            timestampString = "425464490.870243"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "@interface DMViewController"
             landmarkType = "2">
          </BreakpointContent>

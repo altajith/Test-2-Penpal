@@ -11,8 +11,17 @@
 {
 
     IBOutlet UILabel *ShowLabel;
+    IBOutlet UIButton *LogoutButton;
+    IBOutlet UIImageView *ProfilePic;
+    IBOutlet UIButton *ChangeProfilePictureButton;
+    NSString *value2;
+    IBOutlet UIButton *DeactivateButton;
+    IBOutlet UIView *DetialsContainer;
+    IBOutlet UIButton *Next1;
 }
 
-@property NSString *value2;
+- (IBAction)LogoutFunction:(id)sender;
+- (IBAction)ChangeProfilePicFunction:(id)sender;
+- (IBAction)MoveNext1:(id)sender;
 
 @end

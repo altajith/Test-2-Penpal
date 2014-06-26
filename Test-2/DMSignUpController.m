@@ -8,6 +8,7 @@
 
 #import "DMSignUpController.h"
 #import "Parse/PFUser.h"
+#import "LoginController.h"
 @interface DMSignUpController ()
 
 @end
@@ -155,6 +156,7 @@
         ConfrimPassword.layer.borderColor=[[UIColor blackColor] CGColor];
         [ConfrimPassword resignFirstResponder];
     }
+    [PasswordStrengthBar setProgress:0.0];
     return TRUE;
 }
 
@@ -191,6 +193,14 @@
         [PasswordStrengthBar setProgress:1.0];
         //ErrorMsg.text=@"Perfect";
     }
+}
+
+- (IBAction)MoveBack:(id)sender {
+    LoginController *userSignIn =
+    [self.storyboard instantiateViewControllerWithIdentifier:@"DMSignIn"];
+    
+    [self presentViewController:userSignIn animated:YES completion:nil];
+
 }
 
 @end

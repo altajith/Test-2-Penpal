@@ -22,5 +22,6 @@
 }
 - (IBAction)SignUpFunction:(id)sender;
 - (IBAction)ChangePasswordStrength:(id)sender;
+- (IBAction)MoveBack:(id)sender;
 
 @end

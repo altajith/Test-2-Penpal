@@ -23,6 +23,7 @@
     
     [super viewDidLoad];
     
+    self.navigationController.navigationBar.hidden=YES;
     //CicleView.alpha = 0.5;
    // CicleView.layer.cornerRadius = 131;   CicleView.backgroundColor = [UIColor blueColor];
     
@@ -33,7 +34,7 @@
     ImageView.layer.cornerRadius = 117;
     ImageView.layer.masksToBounds = YES;
     
-    
+    SearchButton.layer.cornerRadius=5;
     
     ShowPanelCenter.layer.cornerRadius = 12;
 	// Do any additional setup after loading the view, typically from a nib.
@@ -146,12 +147,12 @@
 
 - (void )imageTapped:(UITapGestureRecognizer *) gestureRecognizer
 {
-   
+    
     //ImageView.hidden=YES;
     [UIImageView animateWithDuration:1.0
                      animations:^{
                          ImageView.alpha = 0.0;
-                         CicleView.backgroundColor=[UIColor colorWithRed:(160/255.0) green:(97/255.0) blue:(5/255.0) alpha:1.0];
+                         CicleView.backgroundColor=[UIColor colorWithRed:(134/255.0) green:(123/255.0) blue:(444/255.0) alpha:1.0];
                      }];
 }
 
@@ -163,7 +164,7 @@
     [UIImageView animateWithDuration:1.0
                           animations:^{
                               ImageView.alpha = 1;
-                              CicleView.backgroundColor=[UIColor whiteColor];
+                              CicleView.backgroundColor=[UIColor lightGrayColor];
                           }];
 }
 
@@ -175,7 +176,7 @@
         PannelTop.backgroundColor = [UIColor blueColor];
     }else{
         RightIcon.highlighted=NO;
-        PannelTop.backgroundColor = [UIColor whiteColor];
+        PannelTop.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
     
     LeftIcon.highlighted=NO;
@@ -191,7 +192,7 @@
         PannelTop.backgroundColor = [UIColor greenColor];
     }else{
         LeftIcon.highlighted=NO;
-        PannelTop.backgroundColor = [UIColor whiteColor];
+        PannelTop.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
     
     RightIcon.highlighted=NO;
@@ -207,7 +208,7 @@
         PannelTop.backgroundColor = [UIColor redColor];
     }else{
         BottonIcon.highlighted=NO;
-        PannelTop.backgroundColor = [UIColor whiteColor];
+        PannelTop.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
     
     RightIcon.highlighted=NO;
@@ -227,7 +228,7 @@
         PannelTop.backgroundColor = [UIColor yellowColor];
     }else{
         TopIcon.highlighted=NO;
-        PannelTop.backgroundColor = [UIColor whiteColor];
+        PannelTop.backgroundColor = [UIColor groupTableViewBackgroundColor];
     }
     
     RightIcon.highlighted=NO;
@@ -239,29 +240,29 @@
 
 - (void )userProfileTapped:(UITapGestureRecognizer *) gestureRecognizer
 {
-    PFObject *testObject = [PFObject objectWithClassName:@"Users"];
-    testObject[@"username"] = @"bar";
-    [testObject saveInBackground];
-    /*
+  
     DMUserProfileViewController *secondViewController =
     [self.storyboard instantiateViewControllerWithIdentifier:@"DMUserProfileID"];
-    secondViewController.value2=_value1;
+    //secondViewController.value2=value2;
     
-    [self presentViewController:secondViewController animated:YES completion:nil];*/
+    [self presentViewController:secondViewController animated:YES completion:nil];
+  
 }
 
 
-- (IBAction)MoveFromSeach:(id)sender {
+- (IBAction)EndSearch:(id)sender {
     [UIImageView animateWithDuration:1.0
                           animations:^{
-                              [SearchText setFrame:CGRectMake(0,20,77,30)];
+                              [SearchText setFrame:CGRectMake(4,20,77,30)];
+                              TitleText.textColor=[UIColor blackColor];
                           }];
 }
 
 - (IBAction)TouchToSearch:(id)sender {
     [UIImageView animateWithDuration:1.0
                           animations:^{
-                              [SearchText setFrame:CGRectMake(0,20,320,30)];
+                              [SearchText setFrame:CGRectMake(4,20,225,30)];
+                              TitleText.textColor=[UIColor groupTableViewBackgroundColor];
                           }];
     /*
     NSString *test=@"bar";
@@ -284,7 +285,7 @@
      }
      ];*/
     
-    [self myMethod];
+    //[self myMethod];
     
 }
 

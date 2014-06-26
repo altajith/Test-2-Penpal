@@ -22,7 +22,7 @@
 		3E130638195926EF001C3324 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3E130636195926EF001C3324 /* InfoPlist.strings */; };
 		3E13063A195926EF001C3324 /* Test_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E130639195926EF001C3324 /* Test_2Tests.m */; };
 		3E13064419592E2E001C3324 /* IronManWallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E13064319592E2E001C3324 /* IronManWallpaper.jpg */; };
-		3E13065219597A3F001C3324 /* DMUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E13065119597A3F001C3324 /* DMUserProfileViewController.m */; };
+		3E13065219597A3F001C3324 /* DMUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E13065119597A3F001C3324 /* DMUserProfileViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3E2306EA195AAFA800576FB7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2306E9195AAFA800576FB7 /* Parse.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		3E2306EC195AAFF400576FB7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2306EB195AAFF400576FB7 /* AudioToolbox.framework */; };
 		3E2306EE195AAFFD00576FB7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2306ED195AAFFD00576FB7 /* CFNetwork.framework */; };
@@ -34,6 +34,8 @@
 		3E2306FA195AB03A00576FB7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2306F9195AB03A00576FB7 /* StoreKit.framework */; };
 		3E2306FC195AB04300576FB7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2306FB195AB04300576FB7 /* SystemConfiguration.framework */; };
 		3E2306FF195ABCF500576FB7 /* DMSignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2306FE195ABCF500576FB7 /* DMSignUpController.m */; };
+		3E2C4B00195BCBC000C6B369 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C4AFF195BCBC000C6B369 /* LoginController.m */; };
+		3E2C4B03195BD81700C6B369 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2C4B02195BD81700C6B369 /* NavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,10 @@
 		3E2306FB195AB04300576FB7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3E2306FD195ABCF500576FB7 /* DMSignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMSignUpController.h; sourceTree = "<group>"; };
 		3E2306FE195ABCF500576FB7 /* DMSignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMSignUpController.m; sourceTree = "<group>"; };
+		3E2C4AFE195BCBC000C6B369 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		3E2C4AFF195BCBC000C6B369 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		3E2C4B01195BD81700C6B369 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		3E2C4B02195BD81700C6B369 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +180,10 @@
 				3E13065119597A3F001C3324 /* DMUserProfileViewController.m */,
 				3E2306FD195ABCF500576FB7 /* DMSignUpController.h */,
 				3E2306FE195ABCF500576FB7 /* DMSignUpController.m */,
+				3E2C4AFE195BCBC000C6B369 /* LoginController.h */,
+				3E2C4AFF195BCBC000C6B369 /* LoginController.m */,
+				3E2C4B01195BD81700C6B369 /* NavigationController.h */,
+				3E2C4B02195BD81700C6B369 /* NavigationController.m */,
 			);
 			path = "Test-2";
 			sourceTree = "<group>";
@@ -326,6 +336,8 @@
 				3E130625195926EF001C3324 /* DMViewController.m in Sources */,
 				3E2306FF195ABCF500576FB7 /* DMSignUpController.m in Sources */,
 				3E13061F195926EF001C3324 /* DMAppDelegate.m in Sources */,
+				3E2C4B00195BCBC000C6B369 /* LoginController.m in Sources */,
+				3E2C4B03195BD81700C6B369 /* NavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
